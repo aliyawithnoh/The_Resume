@@ -1,0 +1,130 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Courier New', Courier, monospace;
+  background: linear-gradient(#061b1dc2, #141414de), url(https://i.etsystatic.com/41411880/r/il/e584b0/4709449301/il_fullxfull.4709449301_q5d9.jpg) center/ cover no-repeat;
+  background-attachment: fixed;
+}
+
+header{
+  display:flex;
+  justify-content:space-evenly;
+  padding:2rem;
+  background:#043d5370;
+}
+
+span{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color:#eee;
+}
+
+a img{
+  border-radius: 50%;
+  width: auto;
+  box-shadow: 0 0 12px 5px #15ffa5 ;
+  height:15rem
+}
+
+img{
+  animation-name: float;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.more{
+  display: flex;
+  justify-content: center;
+}
+
+#btn{
+  width: 20rem;
+  font-size: 1rem;
+  background: #025779a6;
+  padding: 9px;
+  color: #15ffa5;
+  border: solid .1rem #7cffa8;
+}
+
+#container{
+  display: none;
+}
+
+.info{
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 3rem;
+  justify-content: space-evenly;
+  color: #eee;
+}
+
+#first, #second{
+  border: solid #7cffa8 .2rem;
+  border-radius: 5%;
+  padding: 1rem;
+  background: #59ca591f;
+  transition: .3s ease-in-out;
+}
+
+#first:hover, #second:hover{
+  transform: translateY(6px);
+  border: solid #1d5e32 .2rem;
+  background: #2461241f;
+}
+
+
+#first{
+  margin-left: 10px ;
+  width: 50rem;
+}
+
+.skill, .commission, .expirence,
+.summary, .contact, .education, .award,
+.exhibit{
+  margin-bottom: 5rem;
+}
+
+p{
+  margin-bottom:15px ;
+  margin-left: 1rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: rgb(90, 248, 169);
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes float {
+  0%   {
+    transform: translateY(-1);
+    box-shadow: 0 0 12px 5px #fbff15 ;
+  }
+  25%  {
+    transform: translateY(-10px);
+    box-shadow: 0 0 12px 5px #4f87ff ;
+  }
+  50%  {
+    transform: translateX(-10px);
+    box-shadow: 0 0 12px 5px #15ff4f ;
+  }
+  75%  {
+    transform: translateY(10px);
+    box-shadow: 0 0 12px 5px #b12aff ;
+  }
+  100% {
+    transform: translateZ(10px);
+    box-shadow: 0 0 12px 5px #15ffa5 ;
+}
+}
+
